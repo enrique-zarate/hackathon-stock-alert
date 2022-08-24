@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proveedores</title>
+  </head>
+  <body>
+    <h1>Mis proveedores</h1>
+    <form action="{{url_for('proveedor') }}" method="post">
+      <label for="proveedor">Proveedor </label>
+      <input
+        type="proveedor"
+        id="proveedor"
+        name="proveedor"
+        placeholder="Ingrese su proveedor"
+      />
+      <br />
+      <label for="email">e-mail</label>
+      <input
+        type="email"
+        id="e-mail"
+        name="email"
+        placeholder="ej: correo@example.com"
+      />
+      <br />
+      <label for="telefono">Telefono</label>
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        placeholder="Ingrese su telefono o celular"
+      />
+      <hr />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
