@@ -1,3 +1,6 @@
 Flask==2.2.2
 pandas==1.4.3
 openpyxl
+config
+python-telegram-bot
+pyTelegramBotAPIs

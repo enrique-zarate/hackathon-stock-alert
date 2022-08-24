@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proveedores</title>
-  </head>
-  <body>
-    <h1>Mis proveedores</h1>
-    <form action="{{url_for('proveedor') }}" method="post">
-      <label for="proveedor">Proveedor </label>
-      <input
-        type="proveedor"
-        id="proveedor"
-        name="proveedor"
-        placeholder="Ingrese su proveedor"
-      />
-      <br />
-      <label for="email">e-mail</label>
-      <input
-        type="email"
-        id="e-mail"
-        name="email"
-        placeholder="ej: correo@example.com"
-      />
-      <br />
-      <label for="telefono">Telefono</label>
-      <input
-        type="tel"
-        id="telefono"
-        name="telefono"
-        placeholder="Ingrese su telefono o celular"
-      />
-      <hr />
-      <input type="submit" value="Enviar" />
-    </form>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title> Carga de Proveedores </title>
+</head>
+
+<body class="bg-white">
+    <!-- url('/img/hero-pattern.svg') -->
+    <div class="flex min-h-screen bg-white">
+
+        <div class="w-1/2 bg-cover md:block hidden" style="background-image:  url(https://images.unsplash.com/photo-1520243947988-b7b79f7873e9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDd8fGJsYWNrJTIwZm9yZXN0fGVufDB8fDB8eWVsbG93&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)"></div>
+        <!-- <div class="bg-no-repeat bg-right bg-cover max-w-max max-h-8 h-12 overflow-hidden">
+            <img src="log_in.webp" alt="hey">
+        </div> -->
+
+
+        <div class="md:w-1/2 max-w-lg mx-auto my-24 px-4 py-5 shadow-none">
+
+            <div class="text-left p-0 font-sans">
+                
+                <h1 class="text-gray-800 text-4xl font-medium mb-2"> Carga de Proveedores </h1>
+                <h3 class="p-1 text-gray-700"> Carga aqui los datos de tus proveedores para que el bot pueda contactarlos!  </h3>
+            </div>
+            <!-- FORMULARIO -->
+            <form action="#" class="p-0">
+                <div class="mt-5">
+                    <!-- Prooveedor -->
+                    <label for="proveedor" class="sc-bqyKva ePvcBv"> Nombre del Proveedor </label>
+                    <input type="text" id="proveedor" name="proveedor" placeholder="Ingrese su proveedor" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent">
+                </div>
+
+                <div class="mt-5">
+                    <!-- Email -->
+                    <label for="email" class="sc-bqyKva ePvcBv"> E-mail </label>
+                    <input type="text" id="e-mail" name="email" placeholder="ej: correo@example.com" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent ">
+                </div>
+
+                <div class="mt-5">
+                    <!-- Telefono  -->
+                    <label for="telefono" class="sc-bqyKva ePvcBv"> Telefono </label>
+                    <input type="text" id="telefono" name="telefono" placeholder="ej: 0981234567" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  ">
+                </div>
+
+                <div class="mt-10 flex justify-center ">
+                    <input type="submit" value="Enviar" class="py-4 px-8 rounded-full  text-white    bg-cyan-700   hover:bg-teal-500   font-bold" onclick="alert('Se ha cargado el proveedor correctamente!')">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+
