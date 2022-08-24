@@ -58,10 +58,14 @@ def producto():
         print(my_dict_df)
 
         # save to excel
-
         my_dict_df.to_excel('listado_proveedores.xlsx')
 
     return render_template('productos.html')
+
+
+@app.route("/")
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__': #por defecto es main el código
     app.run(debug= True, port="4000", host="0.0.0.0")

@@ -3,3 +3,5 @@ pandas==1.4.3
 openpyxl
 pushbullet.py==0.9.1
 python-dotenv
+python-telegram-bot
+
