@@ -3,4 +3,3 @@ pandas==1.4.3
 openpyxl
 config
 python-telegram-bot
-pyTelegramBotAPIs
